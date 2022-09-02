@@ -1,0 +1,6 @@
+*.*~
+.netrwhist
+nvim/viml/plugged
+nvim/viml/plugins
+nvim/vim_plugins
+node_modules/
