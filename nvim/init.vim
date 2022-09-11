@@ -134,3 +134,4 @@ colorscheme onedark                  " 设置配色方案
 " ==== [ luochen1990/rainbow] ================================
 let g:rainbow_active=1
 
+let g:coc_disable_startup_warning = 1

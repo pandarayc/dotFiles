@@ -105,3 +105,34 @@ nnoremap <leader>ev  :split $MYVIMRC<cr>
 nnoremap <leader>sv  :source $MYVIMRC<cr>
 
 
+" ===================== termail
+" 特殊命名空间
+tnoremap <Esc> <C-\><C-n>
+tnoremap <C-[> <C-\><C-n>
+tnoremap <A-j> <C-\><C-N><C-w>j 
+tnoremap <A-k> <C-\><C-N><C-w>k 
+tnoremap <A-l> <C-\><C-N><C-w>l 
+inoremap <A-h> <C-\><C-N><C-w>h 
+inoremap <A-j> <C-\><C-N><C-w>j 
+inoremap <A-k> <C-\><C-N><C-w>k 
+inoremap <A-l> <C-\> <C-N><C-w>l 
+nnoremap <A-h> <C-w>h 
+nnoremap <A-j> <C-w>j 
+nnoremap <A-k> <C-w>k 
+nnoremap <A-l> <C-w>l
+
+" function! ToggleTerminal()
+"     if empty((filter(getwininfo(), 'v:val.terminal')))
+"         <Plug>(coc-terminal-toggle)
+"     else
+"         <c-\><c-n><Plug>(coc-terminal-toggle)
+"     endif
+" endfunction
+
+nmap <c-;> <Plug>(coc-terminal-toggle)
+tmap <c-;> <c-\><c-n><Plug>(coc-terminal-toggle)
+inoremap <C-;> <C-\><C-N><Plug>(coc-terminal-toggle)
+nmap <a-;> <c-;>
+tmap <a-;> <c-;>
+inoremap <a-;> <c-;>
+" <Esc> <Plug>(coc-terminal-toggle)

@@ -13,4 +13,6 @@ let g:NERDDefaultAlign = 'left'         " 设置注释对齐方式 (左对齐) �
 map <C-/> <Plug>NERDCommenterToggle
 " 部分系统 ctrl + / 映射为 ctrl + _
 map <C-_> <Plug>NERDCommenterToggle
+" termius can't insert ctrl + speical key
+map <A-/> <C-/>
 

@@ -33,8 +33,8 @@ endfunction
 
 " Use <c-space> to trigger completion.
 if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
+"   inoremap <silent><expr> <c-space> coc#refresh()
+" else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
@@ -149,7 +149,3 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-
-
-" 启动不提醒更新版本
-let g:coc_disable_startup_warning = 1

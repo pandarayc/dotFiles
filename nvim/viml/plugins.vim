@@ -29,8 +29,8 @@ Plug 'scrooloose/nerdtree',{ 'on':  'NERDTreeToggle' } " 文件管理树 r 刷�
 Plug 'Xuyuanp/nerdtree-git-plugin'      " nerdtree 显示 git 最新修改标志
 Plug 'joshdick/onedark.vim'             " 配色方案 onedrak
 Plug 'mhinz/vim-signify'
-Plug 'airblade/vim-gitgutter'           " 显示git差异  [c ]c 跳转 差异位置
-Plug 'tpope/vim-fugitive'               " vim 操作 git 并显示分支
+" Plug 'airblade/vim-gitgutter'           " 显示git差异  [c ]c 跳转 差异位置
+" Plug 'tpope/vim-fugitive'               " vim 操作 git 并显示分支
 
 Plug 'luochen1990/rainbow'              " 括号颜色
 Plug 'mhinz/vim-startify'               " 初始化界面
@@ -42,6 +42,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
     " Plug 'majutsushi/tagbar'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'} " termail 控制器
 
 
 call plug#end()
