@@ -20,6 +20,18 @@ fi
 ln -s `pwd`/myrc ~/.myrc
 ```
 
+## myscript 
+定制脚本
+```bash
+ln -s `pwd`/myscript.sh ~/.myscript.sh
+
+## 在对应rc配置文件下添加引用脚本
+if [ -f ~/.myscript.sh ]; then
+    . ~/.myscript.sh
+fi
+
+```
+
 ## gitconfig
 git配置 
 ```bash
